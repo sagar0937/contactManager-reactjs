@@ -2,14 +2,14 @@ import React from "react";
 import image from "../images/image.png";
 
 export const ContactDetails = (props) => {
-  const { id, name, email } = props.location.state.contact;
+  const { name, email } = props.location.state.contact;
   return (
     <div className='ui card centered'>
       <div className='medium image'>
-        <img src={image} />
+        <img src={image} alt={name} />
       </div>
       <div className='content'>
-        <a className='header'>{name}</a>
+        <div className='header'>{name}</div>
         <div className='meta'>
           <span className='date'>Joined in 2013</span>
         </div>
